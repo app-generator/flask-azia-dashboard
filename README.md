@@ -35,7 +35,7 @@ PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Suppo
 <br />
 <br />
 
-![Azia Dashboard Flask - Template project coded in Flask with basic modules by AppSeed.](https://raw.githubusercontent.com/app-generator/flask-dashboard-azia/master/media/flask-dashboard-azia-screen.png)
+![Azia Dashboard Flask - Template project coded in Flask with basic modules by AppSeed.](https://raw.githubusercontent.com/app-generator/flask-dashboard-azia/master/media/flask-dashboard-azia-screen-charts.png)
 
 <br />
 
