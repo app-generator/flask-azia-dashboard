@@ -1,68 +1,56 @@
 {% extends "layouts/base-fullscreen.html" %}
 
-{% block title %} Login {% endblock %}
+{% block title %} Login {% endblock %} 
 
-{% block content %}   
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
 
-    <div class="auth-wrapper">
-        <div class="auth-content">
-            <div class="auth-bg">
-                <span class="r"></span>
-                <span class="r s"></span>
-                <span class="r s"></span>
-                <span class="r"></span>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="mb-4">
-                        <i class="feather icon-unlock auth-icon"></i>
-                    </div>
-                    <h3 class="mb-4">Login</h3>
+{% block content %}
 
-                    <span class="mb-0 text-muted">
-                        {% if msg %}
-                            {{ msg | safe }}
-                        {% else %}
-                            Add your credentials
-                        {% endif %} 
-                    </span>
+    <div class="az-signin-wrapper">
+      <div class="az-card-signin">
+        <h1 class="az-logo">az<span>i</span>a</h1>
+        <div class="az-signin-header">
+          <h2>
+            Flask Dashboard
+          </h2>
+          <h4>
+            {% if msg %}
+                {{ msg | safe }}
+            {% else %}
+                Add your credentials
+            {% endif %} 
+          </h4>
 
-                    <br />
-                    <br />
-                    
-                    <form role="form" method="post" action="">
+          <form role="form" method="post" action="">
 
-                        {{ form.hidden_tag() }}                    
+            {{ form.hidden_tag() }} 
 
-                        <div class="input-group mb-3">
-                            {{ form.username(placeholder="Username", class="form-control") }}
-                        </div>
-                        
-                        <div class="input-group mb-4">
-                            {{ form.password(placeholder="Password", class="form-control", type="password") }}
-                        </div>
-                        
-                        <div class="form-group text-left">
-                            <div class="checkbox checkbox-fill d-inline">
-                                <input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="">
-                                <label for="checkbox-fill-a1" class="cr"> Save Details</label>
-                            </div>
-                        </div>
-                        <button type="submit" name="login" class="btn btn-primary shadow-2 mb-4">Login</button>
+            <div class="form-group">
+              <label>Username</label>
+              {{ form.username(placeholder="Username", class="form-control") }}
+            </div><!-- form-group -->
+            <div class="form-group">
+              <label>Password</label>
+              {{ form.password(placeholder="Password", class="form-control", type="password") }}
+            </div><!-- form-group -->
 
-                    </form>
+            <button type="submit" name="login" class="btn btn-az-primary btn-block">Sign In</button>
+          </form>
 
-                    <p class="mb-0 text-muted">Don’t have an account? <a href="{{ url_for('base_blueprint.register') }}" >Signup</a></p>
-                    <br />
-                    <p class="mb-2 text-muted">
-                        &copy; <a target="_blank" rel="sponsored noopener noreferrer"  
-                                  href="https://codedthemes.com/?ref=appseed">CodedThemes</a> 
-                        - <a target="_blank" rel="noopener noreferrer"  
-                             href="https://appseed.us/boilerplate-code/flask-dashboard">Flask Boilerplate Dashboard</a>.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+        </div><!-- az-signin-header -->
+        <div class="az-signin-footer">
+          <p>Don't have an account? <a href="{{ url_for('base_blueprint.register') }}">Register</a></p>
+          <br />
+          <p>
+            &copy; <a target="_blank" href="https://bit.ly/2UTgih5">BootstrapDash.com</a> 
+            - coded by <a target="_blank" href="https://appseed.us">AppSeed</a>            
+          </p>
+        </div><!-- az-signin-footer -->
+      </div><!-- az-card-signin -->
+    </div><!-- az-signin-wrapper -->
 
 {% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

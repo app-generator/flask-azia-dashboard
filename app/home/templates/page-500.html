@@ -1,33 +1,28 @@
 {% extends "layouts/base-fullscreen.html" %}
 
-{% block title %} 403 Page {% endblock %}
+{% block title %} Error 500 {% endblock %} 
 
-{% block content %}   
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
 
-    <div class="auth-wrapper">
-        <div class="auth-content">
-            <div class="auth-bg">
-                <span class="r"></span>
-                <span class="r s"></span>
-                <span class="r s"></span>
-                <span class="r"></span>
-            </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="mb-4">
-                        <i class="feather x-circle"></i>
-                    </div>
-                    <h3 class="mb-4">Error 500</h3>
+{% block content %}
 
-                    <br />
-
-                    <span class="mb-0 text-muted">
-                        Server Error - <a href="/">Home</a> 
-                    </span>
-
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="az-signin-wrapper">
+      <div class="az-card-signin">
+        <div class="az-signin-body">
+          <h1 class="az-logo">az<span>i</span>a</h1>
+          <br />
+          <h2>Error 500</h2>
+          <h4>Server error</h4>
+          <br />
+          <p>
+            Please contact support or access <a href="/">HOME</a>.
+          </p>
+        </div><!-- az-signin-header -->
+      </div><!-- az-card-signin -->
+    </div><!-- az-signin-wrapper -->
 
 {% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
