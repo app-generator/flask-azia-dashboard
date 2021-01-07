@@ -21,6 +21,7 @@ Azia Dashboard is a beautifully designed admin template featuring a fine selecti
 
 - [Flask Azia Dashboard](https://appseed.us/admin-dashboards/flask-dashboard-azia) - product page
 - [Flask Azia Dashboard Demo](https://flask-dashboard-azia.appseed-srv1.com/) - LIVE App
+- [Flask Tutorial](https://github.com/app-generator/tutorial-flask) - Getting started with Flask
 
 <br />
 
