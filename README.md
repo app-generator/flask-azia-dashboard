@@ -46,7 +46,7 @@ Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
-![Azia Dashboard Flask - Template project coded in Flask with basic modules by AppSeed.](https://raw.githubusercontent.com/app-generator/flask-dashboard-azia/master/media/flask-dashboard-azia-screen-charts.png)
+![Azia Dashboard Flask - Template project coded in Flask with basic modules by AppSeed.](https://user-images.githubusercontent.com/51070104/143403657-81439ce9-1051-41b0-bd43-249ca4290758.gif)
 
 <br />
 
