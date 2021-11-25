@@ -1,0 +1,56 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Login {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="az-signin-wrapper">
+      <div class="az-card-signin">
+        <h1 class="az-logo">az<span>i</span>a</h1>
+        <div class="az-signin-header">
+          <h2>
+            Flask Dashboard
+          </h2>
+          <h4>
+            {% if msg %}
+                {{ msg | safe }}
+            {% else %}
+                Add your credentials
+            {% endif %} 
+          </h4>
+
+          <form role="form" method="post" action="">
+
+            {{ form.hidden_tag() }} 
+
+            <div class="form-group">
+              <label>Username</label>
+              {{ form.username(placeholder="Username", class="form-control") }}
+            </div><!-- form-group -->
+            <div class="form-group">
+              <label>Password</label>
+              {{ form.password(placeholder="Password", class="form-control", type="password") }}
+            </div><!-- form-group -->
+
+            <button type="submit" name="login" class="btn btn-az-primary btn-block">Sign In</button>
+          </form>
+
+        </div><!-- az-signin-header -->
+        <div class="az-signin-footer">
+          <p>Don't have an account? <a href="{{ url_for('authentication_blueprint.register') }}">Register</a></p>
+          <br />
+          <p>
+            &copy; <a target="_blank" href="https://bit.ly/2UTgih5">BootstrapDash.com</a> 
+            - coded by <a target="_blank" href="https://appseed.us">AppSeed</a>            
+          </p>
+        </div><!-- az-signin-footer -->
+      </div><!-- az-card-signin -->
+    </div><!-- az-signin-wrapper -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
