@@ -6,26 +6,26 @@ Open-source **[Flask Dashboard](https://appseed.us/admin-dashboards/flask)** gen
 
 > Features
 
-- Up-to-date [dependencies](./requirements.txt): **Flask 2.0.1**
+- `Up-to-date dependencies`: **Flask 2.0.1**
 - [SCSS compilation](#recompile-css) via **Gulp**
 - DBMS: SQLite, PostgreSQL (production) 
-- DB Tools: SQLAlchemy ORM, Flask-Migrate (schema migrations)
+- `DB Tools`: SQLAlchemy ORM, Flask-Migrate (schema migrations)
 - Modular design with **Blueprints**, simple codebase
 - Session-Based authentication (via **flask_login**), Forms validation
-- Deployment scripts: Docker, Gunicorn / Nginx, Heroku
+- `Deployment`: **Docker**, Gunicorn / Nginx, Heroku
 - Support via **Github** and [Discord](https://discord.gg/fZC6hup).
 
 <br />
 
 > Links
 
-- [Flask Azia Dashboard](https://appseed.us/admin-dashboards/flask-dashboard-azia) - product page
-- [Flask Azia Dashboard](https://flask-dashboard-azia.appseed-srv1.com/) - LIVE deployment
-- [Flask Azia Dashboard](https://docs.appseed.us/products/flask-dashboards/azia-dashboard) - product documentation
+- 👉 [Flask Azia Dashboard](https://appseed.us/admin-dashboards/flask-dashboard-azia) - product page
+- 👉 [Flask Azia Dashboard](https://flask-dashboard-azia.appseed-srv1.com/) - LIVE deployment
+- 👉 [Flask Azia Dashboard](https://docs.appseed.us/products/flask-dashboards/azia-dashboard) - product documentation
 
 <br />
 
-## Quick Start in [Docker](https://www.docker.com/)
+## ✨ Quick Start in `Docker`
 
 > Get the code
 
@@ -48,7 +48,7 @@ Visit `http://localhost:85` in your browser. The app should be up & running.
 
 <br />
 
-## How to use it
+## ✨ How to use it
 
 ```bash
 $ # Get the code
@@ -91,7 +91,7 @@ $ # Access the dashboard in browser: http://127.0.0.1:5000/
 
 <br />
 
-## Code-base structure
+## ✨ Code-base structure
 
 The project is coded using blueprints, app factory pattern, dual configuration profile (development and production), and an intuitive structure presented below:
 
@@ -152,7 +152,7 @@ The project is coded using blueprints, app factory pattern, dual configuration p
 
 <br />
 
-## Recompile CSS
+## ✨ Recompile CSS
 
 To recompile SCSS files, follow this setup:
 
@@ -195,7 +195,7 @@ The generated file is saved in `static/assets/css` directory.
 
 <br />
 
-## Deployment
+## ✨ Deployment
 
 The app is provided with a basic configuration to be executed in [Docker](https://www.docker.com/), [Heroku](https://www.heroku.com/), [Gunicorn](https://gunicorn.org/), and [Waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/).
 
@@ -276,7 +276,7 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 
 <br />
 
-## Azia Dashboard - Free Bootstrap Admin Template
+## ✨ Azia Dashboard - Free Bootstrap Admin Template
 
 Azia Dashboard is a free responsive admin template built with Bootstrap 4. The template has colorful, attractive yet simple and elegant design. The template is well crafted, with all the components neatly and carefully designed and arranged within the template.
 
@@ -284,7 +284,7 @@ Azia Dashboard is packed with all the features that fit your needs but not cramp
 
 <br />
 
-## Credits & Links
+## ✨ Credits & Links
 
 - [Flask Framework](https://www.palletsprojects.com/p/flask/) - The offcial website
 - [Boilerplate Code](https://appseed.us/boilerplate-code) - Index provided by **AppSeed**
@@ -293,4 +293,4 @@ Azia Dashboard is packed with all the features that fit your needs but not cramp
 <br />
 
 ---
-Azia Dashboard Flask - Provided by **AppSeed [App Generator](https://appseed.us/app-generator)**.
+[Azia Dashboard Flask](https://appseed.us/admin-dashboards/flask-dashboard-azia) - Provided by **AppSeed [App Generator](https://appseed.us/app-generator)**.
