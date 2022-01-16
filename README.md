@@ -6,14 +6,13 @@ Open-source **[Flask Dashboard](https://appseed.us/admin-dashboards/flask)** gen
 
 > Features
 
-- `Up-to-date dependencies`: **Flask 2.0.1**
+- `Up-to-date dependencies`
 - [SCSS compilation](#recompile-css) via **Gulp**
-- DBMS: SQLite, PostgreSQL (production) 
+- `DBMS`: SQLite, PostgreSQL (production) 
 - `DB Tools`: SQLAlchemy ORM, Flask-Migrate (schema migrations)
-- Modular design with **Blueprints**, simple codebase
 - Session-Based authentication (via **flask_login**), Forms validation
-- `Deployment`: **Docker**, Gunicorn / Nginx, Heroku
-- Support via **Github** and [Discord](https://discord.gg/fZC6hup).
+- `Deployment`: **Docker**, Gunicorn / Nginx, HEROKU
+- Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
 
 <br />
 
@@ -30,8 +29,8 @@ Open-source **[Flask Dashboard](https://appseed.us/admin-dashboards/flask)** gen
 > Get the code
 
 ```bash
-$ git clone https://github.com/app-generator/flask-azia-dashboard.git
-$ cd flask-azia-dashboard
+$ git clone https://github.com/app-generator/flask-azia.git
+$ cd flask-azia
 ```
 
 > Start the app in Docker
@@ -52,8 +51,8 @@ Visit `http://localhost:85` in your browser. The app should be up & running.
 
 ```bash
 $ # Get the code
-$ git clone https://github.com/app-generator/flask-azia-dashboard.git
-$ cd flask-azia-dashboard
+$ git clone https://github.com/app-generator/flask-azia.git
+$ cd flask-azia
 $
 $ # Virtualenv modules installation (Unix based systems)
 $ virtualenv env
@@ -211,8 +210,8 @@ Steps to deploy on **Heroku**
 
 ```bash
 $ # Clone the source code:
-$ git clone https://github.com/app-generator/flask-dashboard-azia.git
-$ cd flask-dashboard-azia
+$ git clone https://github.com/app-generator/flask-azia.git
+$ cd flask-azia
 $
 $ # Check Heroku CLI is installed
 $ heroku -v
