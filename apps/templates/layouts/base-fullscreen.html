@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ config.ASSETS_ROOT }}/favicon.png">
 
     <!-- Twitter -->
     <!-- <meta name="twitter:site" content="@bootstrapdash">
@@ -35,12 +35,12 @@
     </title>
 
     <!-- vendor css -->
-    <link href="/static/assets/lib/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="/static/assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="/static/assets/lib/typicons.font/typicons.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/typicons.font/typicons.css" rel="stylesheet">
 
     <!-- azia CSS -->
-    <link rel="stylesheet" href="/static/assets/css/azia.css">
+    <link rel="stylesheet" href="{{ config.ASSETS_ROOT }}/css/azia.css">
 
     <!-- Specific Page CSS goes HERE  -->
     {% block stylesheets %}{% endblock stylesheets %}
@@ -52,7 +52,7 @@
 
     {% include 'includes/scripts.html' %}
 
-    <script src="/static/assets/js/azia.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/js/azia.js"></script>
 
     <!-- Specific Page JS goes HERE  -->
     {% block javascripts %}{% endblock javascripts %}

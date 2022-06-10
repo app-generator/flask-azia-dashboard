@@ -105,13 +105,13 @@
 <!-- Page JS Plugins goes HERE  -->
 {% block plugin_javascripts %}
 
-    <script src="/static/assets/lib/chart.js/Chart.bundle.min.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/chart.js/Chart.bundle.min.js"></script>
 
 {% endblock %}
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}
 
-    <script src="/static/assets/js/chart.chartjs.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/js/chart.chartjs.js"></script>
 
 {% endblock %}

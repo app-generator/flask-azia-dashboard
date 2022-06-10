@@ -5,13 +5,13 @@
 <!-- Page CSS Plugins goes HERE  -->
 {% block plugin_stylesheets %}
 
-    <link href="/static/assets/lib/spectrum-colorpicker/spectrum.css" rel="stylesheet">
-    <link href="/static/assets/lib/select2/css/select2.min.css" rel="stylesheet">
-    <link href="/static/assets/lib/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet">
-    <link href="/static/assets/lib/ion-rangeslider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
-    <link href="/static/assets/lib/amazeui-datetimepicker/css/amazeui.datetimepicker.css" rel="stylesheet">
-    <link href="/static/assets/lib/jquery-simple-datetimepicker/jquery.simple-dtpicker.css" rel="stylesheet">
-    <link href="/static/assets/lib/pickerjs/picker.min.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/spectrum-colorpicker/spectrum.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/select2/css/select2.min.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/ion-rangeslider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/amazeui-datetimepicker/css/amazeui.datetimepicker.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/jquery-simple-datetimepicker/jquery.simple-dtpicker.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/pickerjs/picker.min.css" rel="stylesheet">
 
 {% endblock plugin_stylesheets %}
 
@@ -537,14 +537,14 @@
 <!-- Page JS Plugins goes HERE  -->
 {% block plugin_javascripts %}
 
-    <script src="/static/assets/lib/jquery-ui/ui/widgets/datepicker.js"></script>
-    <script src="/static/assets/lib/jquery.maskedinput/jquery.maskedinput.js"></script>
-    <script src="/static/assets/lib/spectrum-colorpicker/spectrum.js"></script>
-    <script src="/static/assets/lib/select2/js/select2.min.js"></script>
-    <script src="/static/assets/lib/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
-    <script src="/static/assets/lib/amazeui-datetimepicker/js/amazeui.datetimepicker.min.js"></script>
-    <script src="/static/assets/lib/jquery-simple-datetimepicker/jquery.simple-dtpicker.js"></script>
-    <script src="/static/assets/lib/pickerjs/picker.min.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/jquery-ui/ui/widgets/datepicker.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/jquery.maskedinput/jquery.maskedinput.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/spectrum-colorpicker/spectrum.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/select2/js/select2.min.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/amazeui-datetimepicker/js/amazeui.datetimepicker.min.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/jquery-simple-datetimepicker/jquery.simple-dtpicker.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/pickerjs/picker.min.js"></script>
 
 {% endblock plugin_javascripts %}
 

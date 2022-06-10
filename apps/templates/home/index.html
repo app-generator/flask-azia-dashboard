@@ -8,13 +8,13 @@
 {% block content %}
 
     <!-- vendor css -->
-    <link href="/static/assets/lib/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="/static/assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="/static/assets/lib/typicons.font/typicons.css" rel="stylesheet">
-    <link href="/static/assets/lib/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/typicons.font/typicons.css" rel="stylesheet">
+    <link href="{{ config.ASSETS_ROOT }}/lib/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
 
     <!-- azia CSS -->
-    <link rel="stylesheet" href="/static/assets/css/azia.css">
+    <link rel="stylesheet" href="{{ config.ASSETS_ROOT }}/css/azia.css">
 
     <div class="az-content az-content-dashboard">
       <div class="container">
@@ -404,18 +404,18 @@
 <!-- Page JS Plugins goes HERE  -->
 {% block plugin_javascripts %}
 
-    <script src="/static/assets/lib/jquery.flot/jquery.flot.js"></script>
-    <script src="/static/assets/lib/jquery.flot/jquery.flot.resize.js"></script>
-    <script src="/static/assets/lib/chart.js/Chart.bundle.min.js"></script>
-    <script src="/static/assets/lib/peity/jquery.peity.min.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/jquery.flot/jquery.flot.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/chart.js/Chart.bundle.min.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/lib/peity/jquery.peity.min.js"></script>
 
 {% endblock plugin_javascripts %}
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}
 
-    <script src="/static/assets/js/chart.flot.sampledata.js"></script>
-    <script src="/static/assets/js/dashboard.sampledata.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/js/chart.flot.sampledata.js"></script>
+    <script src="{{ config.ASSETS_ROOT }}/js/dashboard.sampledata.js"></script>
     <script>
       $(function(){
         'use strict'
