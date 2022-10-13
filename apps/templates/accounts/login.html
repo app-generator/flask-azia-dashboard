@@ -16,7 +16,9 @@
           </h2>
           <h4>
             {% if msg %}
+              <span class="text-danger">
                 {{ msg | safe }}
+              </span>                
             {% else %}
                 Add your credentials
             {% endif %} 
