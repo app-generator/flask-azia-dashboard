@@ -41,28 +41,38 @@
               </span>          
           </h4>
 
-          <form role="form" method="post" action="">
+          {% if success %}
 
-            {{ form.hidden_tag() }}    
+            <a href="{{ url_for('authentication_blueprint.login') }}" class="btn btn-az-primary btn-block">Sign IN</a>
 
-            <div class="form-group">
-              <label>Username</label>
-              {{ form.username(placeholder="Username", class="form-control") }}
-            </div><!-- form-group -->
-            
-            <div class="form-group">
-              <label>Email</label>
-                {{ form.email(placeholder="Email", class="form-control", type="email") }}
-            </div><!-- form-group -->
+          {% else %}
 
-            <div class="form-group">
-              <label>Password</label>
-              {{ form.password(placeholder="Password", class="form-control", type="password") }}
-            </div><!-- form-group -->
-            
-            <button type="submit" name="register" class="btn btn-az-primary btn-block">Create Account</button>
+            <form role="form" method="post" action="">
 
-          </form>
+              {{ form.hidden_tag() }}    
+
+              <div class="form-group">
+                <label>Username</label>
+                {{ form.username(placeholder="Username", class="form-control") }}
+              </div><!-- form-group -->
+              
+              <div class="form-group">
+                <label>Email</label>
+                  {{ form.email(placeholder="Email", class="form-control", type="email") }}
+              </div><!-- form-group -->
+
+              <div class="form-group">
+                <label>Password</label>
+                {{ form.password(placeholder="Password", class="form-control", type="password") }}
+              </div><!-- form-group -->
+              
+              <button type="submit" name="register" class="btn btn-az-primary btn-block">Create Account</button>
+
+            </form>
+
+          {% endif %}
+
+
         </div><!-- az-signup-header -->
         <div class="az-signup-footer">
           <p>Already have an account? <a href="{{ url_for('authentication_blueprint.login') }}">Sign In</a></p>

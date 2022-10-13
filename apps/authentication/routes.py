@@ -87,7 +87,7 @@ def register():
         logout_user()
         
         return render_template('accounts/register.html',
-                               msg='User created successfully.',
+                               msg='Account created successfully.',
                                success=True,
                                form=create_account_form)
 
