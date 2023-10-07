@@ -1,13 +1,19 @@
 # Change Log
 
+## [1.0.7] 2023-10-07
+### Changes
+
+- Update Dependencies
+- Codebase Improvements
+
 ## [1.0.5] 20212-06-10
-### Improvements
+### Changes
 
 - Built with [Azia Dashboard Generator](https://appseed.us/generator/azia-dashboard/)
   - Timestamp: `2022-06-10 13:24`
 
 ## [1.0.4] 2022-01-16
-### Improvements
+### Changes
 
 - Bump Flask Codebase to [v2stable.0.1](https://github.com/app-generator/boilerplate-code-flask-dashboard/releases)
 - Dependencies update (all packages) 
