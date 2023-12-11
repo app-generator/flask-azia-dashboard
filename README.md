@@ -4,7 +4,9 @@ Open-source **[Flask Dashboard](https://appseed.us/admin-dashboards/flask/)** ge
 
 - 👉 [Azia Dashboard Flask](https://appseed.us/product/azia-dashboard/flask/) - product page
 - 👉 [Azia Dashboard Flask](https://flask-dashboard-azia.appseed-srv1.com/) - LIVE deployment
-  
+
+<br />
+
 ## ✅ Features
 
 - `Up-to-date dependencies`
